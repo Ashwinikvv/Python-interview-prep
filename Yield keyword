@@ -1,0 +1,9 @@
+def days(index):
+    day=['S','M','T','W']
+    yield day[index]
+    yield day[index+1]
+if __name__ == "__main__":
+    res=days(0)
+    print(next(res),next(res))
+
+      
