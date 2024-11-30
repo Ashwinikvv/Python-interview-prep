@@ -1,0 +1,31 @@
+Scenario Based Interview Questions
+1. You’re building a web scraper to collect product details from an e-commerce site. How would you handle dynamic page elements and potential access blocks?
+
+Answer: I’d use Selenium with WebDriverWait and ExpectedConditions to handle dynamic elements. For access blocks, I’d try user-agent rotation, headless browsing, and changing IP addresses to evade detection. If that fails, I’d consider alternative data sources or APIs.
+2. You’re analyzing customer purchase data for a clothing store. How would you identify trends and segments for targeted marketing campaigns?
+
+Answer: I’d use Pandas for data manipulation and analysis. I’d look for patterns in purchase history, demographics, and location data using group-by functions and visualizations. K-means clustering could help identify distinct customer segments for targeted campaigns.
+3. You’re building a financial data dashboard. How would you ensure real-time updates and handle latency issues?
+
+Answer: I’d use libraries like Flask or Dash to build the interactive dashboard. For real-time updates, I’d consider WebSockets or SSE (Server-Sent Events) for server-to-client communication. To minimize latency, I’d cache frequently accessed data, optimize queries, and leverage asynchronous tasks.
+4. You’re dealing with a large CSV file containing messy data. How would you clean and validate it before further analysis?
+
+Answer: I’d use regular expressions and Pandas utilities to handle missing values, inconsistencies, and invalid formats. Data validation libraries like Pandas-Schema or PyPI’s “datachecker” could also be helpful.
+5. You’re tasked with optimizing a Python script that takes too long to run. How would you approach performance improvement?
+
+Answer: I’d analyze the code for bottlenecks using profiling tools like cProfile or line_profiler. Based on the results, I’d optimize algorithms, utilize vectorized operations, memoization, and data caching techniques.
+6. You’re building a machine learning model for sentiment analysis. How would you prepare and pre-process your text data for optimal results?
+
+Answer: I’d use Natural Language Processing (NLP) libraries like NLTK or spaCy for tokenization, cleaning, stop word removal, and stemming/lemmatization. TF-IDF or similar techniques could be employed for feature engineering.
+7. You’re building a REST API endpoint. How would you handle authentication, authorization, and error handling?
+
+Answer: I’d utilize libraries like Flask-JWT or Flask-RESTful for authentication and authorization. For error handling, I’d define custom error codes and responses based on the type of error encountered.
+8. You’re tasked with automating repetitive tasks in Excel using Python. How would you approach this?
+
+Answer: I’d use libraries like openpyxl to manipulate Excel spreadsheets. I’d automate tasks like data extraction, cleaning, formatting, and report generation using loops and conditional statements.
+9. You encounter a bug in your Python code. How do you debug it effectively?
+
+Answer: I’d use the built-in Python debugger (pdb) to step through the code line by line. I’d also utilize print statements strategically, analyze error messages, and leverage IDE features like breakpoint debugging.
+10. You’re working on a team project with other developers. How do you ensure consistent coding style and collaboration on Python code?
+
+Answer: I’d advocate for using linters and formatters like Black and Pylint for code style standardization. Utilizing Git and code versioning tools like GitHub would facilitate collaboration and version control.
