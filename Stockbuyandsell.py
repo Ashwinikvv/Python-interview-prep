@@ -40,3 +40,24 @@ def max_profit(prices):
 if __name__ == "__main__":
     prices = [7, 10, 1, 3, 6, 9, 2]
     print(max_profit(prices))
+
+
+
+
+from itertools import pairwise  # Importing the pairwise function from itertools module
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        # Initialize total profit to zero
+        total_profit = 0
+      
+        # Loop through each pair of successive prices using pairwise()
+        for buy_price, sell_price in pairwise(prices):
+            # Calculate profit for the current pair
+            # If sell price is greater than buy price, add the difference to total profit
+            # Otherwise, add zero (no loss, no gain)
+            profit = max(0, sell_price - buy_price)
+            total_profit += profit
+      
+        # Return the total calculated profit
+        return total_profit
