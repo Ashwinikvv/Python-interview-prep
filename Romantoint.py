@@ -27,4 +27,7 @@ class Solution:
         # Return the computed total, which is the integer equivalent of the Roman numeral string.
         return total
 
-# Example use:
+# Example use:Example use:
+# solution = Solution()
+# result = solution.romanToInt("MCMXCIV")
+# print(result)  # Output: 1994
